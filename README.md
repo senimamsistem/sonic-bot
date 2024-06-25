@@ -1,6 +1,6 @@
-# Sonic Odyssey Bot From HCA
+# Sonic Odyssey Bot Dari HCA
 
-
+Sonic Odyssey Bot adalah aplikasi Node.js yang dirancang untuk mengirimkan transaksi kripto SOL (Solana) menggunakan frasa seed atau kunci pribadi ke alamat acak.
 
 ## Prasyarat
 
@@ -9,50 +9,32 @@
 
 ## Instalasi
 
-1. Clone repositori:
+Ikuti langkah-langkah berikut untuk menginstal dan menjalankan Sonic Odyssey Bot:
 
-   ```bash
-   git clone https://github.com/dante4rt/sonic-odyssey-bot.git
-   ```
+1. Buka [Google IDX](https://idx.google.com/)
+2. Pilih "Import a repo" dan tempel URL repositori ini `https://github.com/senimamsistem/sonic-bot.git`
+3. Buat file `accounts.json` dengan array frasa seed.
+4. Buat file `privateKeys.json` dengan array kunci pribadi (dikodekan base58).
 
-2. Navigasi ke direktori proyek:
+Contoh `accounts.json`:
+```json
+[
+  "frasa_seed_1",
+  "frasa_seed_2"
+]
+```
 
-   ```bash
-   cd sonic-odyssey-bot
-   ```
-
-3. Pasang dependensi:
-
-   ```bash
-   npm install
-   # atau
-   yarn install
-   ```
-
-4. Siapkan file input:
-
-   - Buat `accounts.json` dengan array frasa seed.
-   - Buat `privateKeys.json` dengan array kunci pribadi (dikodekan base58).
-
-   Contoh `accounts.json`:
-   ```json
-   [
-     "frasa_seed_1",
-     "frasa_seed_2"
-   ]
-   ```
-
-   Contoh `privateKeys.json`:
-   ```json
-   [
-     "kunci_pribadi_base58_1",
-     "kunci_pribadi_base58_2"
-   ]
-   ```
+Contoh `privateKeys.json`:
+```json
+[
+  "kunci_pribadi_base58_1",
+  "kunci_pribadi_base58_2"
+]
+```
 
 ## Penggunaan
 
-Jalankan bot menggunakan Node.js:
+Untuk menjalankan bot, gunakan Node.js:
 
 ```bash
 npm start
@@ -60,9 +42,6 @@ npm start
 
 Ikuti petunjuk untuk memilih metode input (0 untuk frasa seed, 1 untuk kunci pribadi) dan tentukan jumlah alamat acak yang akan dihasilkan.
 
+## Bantuan
 
-
-## ???
-
-Jika Anda memiliki pertanyaan atau masalah terkait bot ini, silakan referensi BOT  https://github.com/dante4rt/sonic-odyssey-bot
-
+Jika Anda memiliki pertanyaan atau masalah terkait bot ini, silakan merujuk ke [BOT ini](https://github.com/dante4rt/sonic-odyssey-bot) sebagai referensi.
