@@ -1,71 +1,68 @@
-# Sonic Odyssey Bot
+# Sonic Odyssey Bot From HCA
 
-Sonic Odyssey Bot is a Node.js application for sending SOL (Solana) cryptocurrency transactions using seed phrases or private keys to random addresses.
 
-## Features
 
-- **Transaction Sending**: Sends SOL transactions from multiple accounts to random addresses.
-- **Input Methods**: Supports input via seed phrases or private keys.
-- **Random Address Generation**: Generates a specified number of random addresses for sending transactions.
+## Prasyarat
 
-## Prerequisites
+- Node.js terinstal di mesin Anda
+- Manajer paket `npm` atau `yarn`
 
-- Node.js installed on your machine
-- `npm` or `yarn` package manager
+## Instalasi
 
-## Installation
-
-1. Clone the repository:
+1. Clone repositori:
 
    ```bash
    git clone https://github.com/dante4rt/sonic-odyssey-bot.git
    ```
 
-2. Navigate into the project directory:
+2. Navigasi ke direktori proyek:
 
    ```bash
    cd sonic-odyssey-bot
    ```
 
-3. Install dependencies:
+3. Pasang dependensi:
 
    ```bash
    npm install
-   # or
+   # atau
    yarn install
    ```
 
-4. Prepare input files:
+4. Siapkan file input:
 
-   - Create `accounts.json` with an array of seed phrases.
-   - Create `privateKeys.json` with an array of private keys (base58 encoded).
+   - Buat `accounts.json` dengan array frasa seed.
+   - Buat `privateKeys.json` dengan array kunci pribadi (dikodekan base58).
 
-   Example `accounts.json`:
+   Contoh `accounts.json`:
    ```json
    [
-     "seed_phrase_1",
-     "seed_phrase_2"
+     "frasa_seed_1",
+     "frasa_seed_2"
    ]
    ```
 
-   Example `privateKeys.json`:
+   Contoh `privateKeys.json`:
    ```json
    [
-     "base58_private_key_1",
-     "base58_private_key_2"
+     "kunci_pribadi_base58_1",
+     "kunci_pribadi_base58_2"
    ]
    ```
 
-## Usage
+## Penggunaan
 
-Run the bot using Node.js:
+Jalankan bot menggunakan Node.js:
 
 ```bash
 npm start
 ```
 
-Follow the prompts to select the input method (0 for seed phrase, 1 for private key) and specify the number of random addresses to generate.
+Ikuti petunjuk untuk memilih metode input (0 untuk frasa seed, 1 untuk kunci pribadi) dan tentukan jumlah alamat acak yang akan dihasilkan.
 
-## Contributing
 
-Contributions are welcome! Feel free to open issues or pull requests for any improvements or fixes.
+
+## ???
+
+Jika Anda memiliki pertanyaan atau masalah terkait bot ini, silakan referensi BOT  https://github.com/dante4rt/sonic-odyssey-bot
+

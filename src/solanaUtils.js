@@ -27,8 +27,10 @@ async function sendSol(fromKeypair, toPublicKey, amount) {
   const signature = await sendAndConfirmTransaction(connection, transaction, [
     fromKeypair,
   ]);
-  console.log(colors.green('Transaction confirmed with signature:'), signature);
+  return signature;
 }
+
+
 
 function generateRandomAddresses(count) {
   return Array.from({ length: count }, () =>

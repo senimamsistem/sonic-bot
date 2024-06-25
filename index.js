@@ -72,13 +72,13 @@ const { displayHeader } = require('./src/displayUtils');
     for (const address of randomAddresses) {
       const toPublicKey = new PublicKey(address);
       try {
-        await sendSol(fromKeypair, toPublicKey, amountToSend);
+        const transactionHash = await sendSol(fromKeypair, toPublicKey, amountToSend);
         console.log(
-          colors.green(`Successfully sent ${amountToSend} SOL to ${address}`)
+          colors.green(`Berhasil mengirim Ke ${amountToSend} SOL to ${address}.\nHash: https://explorer.sonic.game/tx/${transactionHash}`)
         );
       } catch (error) {
         console.error(colors.red(`Failed to send SOL to ${address}:`), error);
       }
-    }
+    }    
   }
 })();
